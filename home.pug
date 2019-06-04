@@ -75,6 +75,7 @@ html(lang='en')
           table#example.display(style='width:100%')
             thead
               tr
+                th Profile
                 th First Name
                 th Last Name
                 th Email
@@ -82,7 +83,9 @@ html(lang='en')
                 th Action
             tbody
               each member in data
-                tr 
+                tr
+                  td 
+                    img(src="images/"+member.image,height="50",width="50") 
                   td #{member.firstName}
                   td #{member.lastName}
                   td #{member.email}
