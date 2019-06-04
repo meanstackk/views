@@ -24,8 +24,11 @@ html(lang='en')
           a(data-toggle='pill', href='#form') Form                                                                                                                   
         li
           a(data-toggle='pill', href='#list') List
+        li
+          a(href='/logout') LogOut  
       .tab-content
         #form.tab-pane.fade.in.active
+          b #{user.name}
           .container
             .push
             .row
